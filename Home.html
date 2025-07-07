@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <p id="WebName">Shortly</p>
+        <ul>
+            <li><a href="index.html" class="normal_text">Home</a></li>
+            <li><a href="about.html" class="normal_text">About</a></li>
+            <li><a href="services.html"class="normal_text">Services</a></li>
+            <li><a href="contact.html" class="normal_text">Contact</a></li>
+        </ul>
+        <span>
+            <a href="#" class="normal_text">Login</a>
+            <a href="#" id="Sign_up">Sign Up</a>
+        </span>
+    </nav>
+
+    <div class="frontdata">
+       
+        <div class="secondpart">
+            <b class="largestfont">More than just shorter links</b>
+        <p class="smallfont">
+            Build you brand's recognistion and get detailed insights on how you links are performing.
+        </p>
+        <span class="GetStart">GetStart</span>
+        </div>
+
+
+         <div class="imagecollection">
+            <div class="image_box"></div>
+            <div class="image_box1"></div>
+        </div>
+    </div>
+
+    
+    <div class="search">
+        <div class="searchbox">
+            <input type="text" name="" placeholder="Shorten a list here" class="searchbox_input">
+            <button class="search_Shorten">Shorten List</button>
+        </div>
+    </div>
+
+
+    <div class="pop-up">
+        
+    </div>
+    <div class="footer">
+        <div class="forniture">
+            <p class="footer-heading">Forniture</p>
+            <p class="footer-links">I don't know</p>
+            <p class="footer-links">I don't know</p>
+            <p class="footer-links">I don't know</p>
+        </div>
+        <div class="biography">
+            <p class="footer-heading">Biography</p>
+            <p class="footer-links">I don't know</p>
+            <p class="footer-links">I don't know</p>
+            <p class="footer-links">I don't know</p>
+        </div>
+        <div class="company">
+            <p class="footer-heading">Company</p>
+            <p class="footer-links">I don't know</p>
+            <p class="footer-links">I don't know</p>
+            <p class="footer-links">I don't know</p>
+        </div>
+        <div class="social">
+            
+            <p class="social-icons">G</p>
+            <p class="social-icons">I</p>
+            <p class="social-icons">T</p>
+        </div>
+    </div>
+    <script>
+       let pop_up = document.querySelector(".pop-up");
+       let login_button = document.querySelector("#Sign_up");
+       var visible = false;
+        login_button.addEventListener("click" , simple(visible));
+       
+       function simple(visible){
+            if(visible === false){
+                pop_up.style.visibility = "visible";
+            }
+             else if(visible !== false){
+                pop_up.style.visibility = "hidden";
+            }
+            
+       }
+       
+    </script>
+</body>
+</html>
